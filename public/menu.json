@@ -1,0 +1,23 @@
+[
+  {
+    "menuName": "Home",
+    "icon": "home",
+    "link": "/"
+  },
+  {
+    "menuName": "Charts",
+    "link": "/charts",
+    "icon": "home",
+    "children": [
+      {
+        "menuName": "Bar chart",
+        "link": "/charts/barChart"
+      }
+    ]
+  },
+  {
+    "menuName": "Maps",
+    "icon": "home",
+    "link": "/maps"
+  }
+]
