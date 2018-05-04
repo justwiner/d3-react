@@ -10,12 +10,16 @@
     "icon": "home",
     "children": [
       {
-        "menuName": "柱形统计图",
+        "menuName": "条形统计图",
         "link": "/charts/barChart"
       },
       {
-        "menuName": "折线统计图",
-        "link": "/charts/foldChart"
+        "menuName": "面积统计图",
+        "link": "/charts/areaChart"
+      },
+      {
+        "menuName": "饼状统计图",
+        "link": "/charts/pieChart"
       }
     ]
   },

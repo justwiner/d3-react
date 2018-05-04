@@ -26,3 +26,12 @@
   stroke: lightgrey;
   stroke-width:0.5
 }
+
+.barGraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    border: 1px solid lightgrey;
+  }
+}
