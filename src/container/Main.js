@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Route } from "react-router-dom"
-import { Home, Maps, Charts } from "../view"
+import { Home, Geo, Charts } from "../view"
 import { Layout } from 'antd'
 import Slider from './Slider'
 import { connect } from 'react-redux';
@@ -24,8 +24,8 @@ class Main extends Component {
       <Layout>
         <Slider {...this.props} collapsed={collapsed}/>
         <Route exact path="/" render={(props) => <Home {...Object.assign(props,this.props)} collapsed={this.state.collapsed} toggle={this.toggle}/>}/>
-        <Route path="/maps" render={(props) => <Maps {...Object.assign(props,this.props)} collapsed={this.state.collapsed} toggle={this.toggle}/> }/>
-        <Route path="/charts" render={(props) => <Charts {...Object.assign(props,this.props)} collapsed={this.state.collapsed} toggle={this.toggle}/> }/>
+        <Route path="/geo" render={(props) => <Geo {...Object.assign(props,this.props)} collapsed={this.state.collapsed} toggle={this.toggle}/> }/>
+        <Route path="/charts/:chartsType" render={(props) => <Charts {...Object.assign(props,this.props)} collapsed={this.state.collapsed} toggle={this.toggle}/> }/>
       </Layout>
     );
   }

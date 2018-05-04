@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { Layout, Icon } from 'antd';
+import { MapCn } from '../components'
+import { Route } from 'react-router-dom'
 const { Header, Content } = Layout;
  
-class Maps extends Component {
+class Geo extends Component {
   render() {
     const { actions, location, match } = this.props
     actions.setRouter(location.pathname,match.url)
@@ -16,11 +18,11 @@ class Maps extends Component {
           />
         </Header>
         <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-          Maps
+          <Route path="/geo/mapCn" component={MapCn}></Route>
         </Content>
       </Layout>
     );
   }
 }
  
-export default Maps
+export default Geo

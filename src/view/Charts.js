@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Icon } from 'antd';
+import { Route } from 'react-router-dom'
+import { BarChart, FoldChart } from '../components'
 const { Header, Content } = Layout;
  
 class Charts extends Component {
@@ -16,7 +18,8 @@ class Charts extends Component {
           />
         </Header>
         <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-          Charts
+          <Route path={`/charts/barChart`} component={BarChart}></Route>
+          <Route path={`/charts/foldChart`} component={FoldChart}></Route>
         </Content>
       </Layout>
     );

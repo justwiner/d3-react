@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Maps from "./Maps";
+import Geo from "./Geo";
 import Charts from "./Charts";
 
-export { Home, Maps, Charts }
+export { Home, Geo, Charts }

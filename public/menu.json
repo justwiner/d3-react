@@ -1,23 +1,33 @@
 [
   {
-    "menuName": "Home",
+    "menuName": "主页",
     "icon": "home",
     "link": "/"
   },
   {
-    "menuName": "Charts",
+    "menuName": "统计图",
     "link": "/charts",
     "icon": "home",
     "children": [
       {
-        "menuName": "Bar chart",
+        "menuName": "柱形统计图",
         "link": "/charts/barChart"
+      },
+      {
+        "menuName": "折线统计图",
+        "link": "/charts/foldChart"
       }
     ]
   },
   {
-    "menuName": "Maps",
+    "menuName": "地理",
     "icon": "home",
-    "link": "/maps"
+    "link": "/geo",
+    "children": [
+      {
+        "menuName": "中国地图",
+        "link": "/geo/mapCn"
+      }
+    ]
   }
 ]
